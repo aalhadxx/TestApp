@@ -19,7 +19,6 @@ listItem: {
     backgroundColor:'#f8f8f8',
     borderBottomWidth: 1,
     borderColor: '#eee'
-
 },
 listItemView:{
  flexDirection: 'row',
@@ -30,4 +29,5 @@ listItemText: {
     fontSize: 18
 }
 });
+
 export default ListItem;

@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, FlatList, Alert} from 'react-native';
 import Header from './components/header';
 import AddItem from './components/AddItem';
 import ListItem from './components/ListItem';
+
 const App = () => {
   const [items, setItems] = useState([
     {id: Math.random(), text: 'Milk'},
@@ -25,7 +26,7 @@ const App = () => {
     setItems(prevItems => {
       return prevItems.filter(item => item.id != id);
         });
-  }
+  };
 
   return (
     <View style={styles.container}>
@@ -44,4 +45,5 @@ const styles = StyleSheet.create({
     flex: 1,
   }
 });
+
 export default App;
